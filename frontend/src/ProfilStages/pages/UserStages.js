@@ -38,4 +38,4 @@ const UserStages = () => {
   );
 };
 
-export default UserPlaces;
+export default UserStages;

@@ -126,3 +126,5 @@ const NewStage = () => {
       </React.Fragment>
     );
   };
+
+export default NewStage;
