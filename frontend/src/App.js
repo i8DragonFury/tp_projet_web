@@ -12,6 +12,9 @@ import Users from './user/pages/Users';
 import Auth from './user/pages/Auth';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
+import Footer from './Footer';
+import ProfilStagiaires from './component/pagesStatic/profils';
+import Gestion from './component/pagesStatic/gestion';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -54,14 +57,15 @@ const App = () => {
           <FAQ />
         </Route>
         <Route path="/gestion" exact>
-          <FAQ />
+          <Gestion/>
         </Route>
-        <Route path="/:userId/places" exact>
+        <Route path="/profils" exact>
+          <ProfilStagiaires/>
         </Route>
         <Route path="/auth">
           <Auth />
         </Route>
-        <Redirect to="/auth" />
+        <Redirect to="/" />
       </Switch>
     );
   }
@@ -70,10 +74,10 @@ const App = () => {
     <AuthContext.Provider
       value={{ isLoggedIn: isLoggedIn, userId:userId, login: login, logout: logout }}
     >
-      
       <Router>
         <MainNavigation />
         <main>{routes}</main>
+        <Footer></Footer>
       </Router>
     </AuthContext.Provider>
   )

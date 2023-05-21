@@ -1,5 +1,6 @@
 import React from 'react';
 import "./css/faq.css"
+import "./css/accueil.css"
 import CardFAQ from '../../shared/components/FormElements/CardFAQ';
 import { NavLink } from 'react-router-dom';
 const FAQ = () => {
