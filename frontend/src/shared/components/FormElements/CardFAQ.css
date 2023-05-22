@@ -8,15 +8,15 @@
     width: 100%;
     position: relative;
     margin: 0;
-    padding: 10px 10px 0 48px;
+    padding: 15px 15px 0 58px;
     display: block;
     cursor: pointer;
   }
   
   .panel-content {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0px 14px;
-    margin: 0 40px;
+    margin: 0 44px;
     height: 0;
     overflow: hidden;
     z-index: -1;
@@ -38,7 +38,7 @@
     margin-left: 20px;
     margin-top: 4px;
     z-index: 5;
-    font-size: 42px;
+    font-size: 40px;
     line-height: 100%;
     -webkit-user-select: none;
     -moz-user-select: none;

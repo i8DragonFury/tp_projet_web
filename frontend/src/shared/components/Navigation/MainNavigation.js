@@ -38,7 +38,7 @@ const MainNavigation = props => {
         </button>
         
         <h1 className="main-navigation__title">
-        <img src="../assets/logomo.png" alt="logo Montmo"/>
+        <img src="/../assets/logomo.png" alt="logo"/>
           <Link to="/">Collège Montmorency</Link>
         </h1>
         <nav className="main-navigation__header-nav">

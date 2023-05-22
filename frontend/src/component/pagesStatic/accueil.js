@@ -1,6 +1,5 @@
 import React from 'react';
 import "./css/accueil.css"
-import { NavLink } from 'react-router-dom';
 const Accueil = () => {
   return (
     <div className='Accueil'>
