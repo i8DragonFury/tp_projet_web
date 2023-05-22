@@ -1,6 +1,6 @@
 const fs = require("fs");
 const Etudiant = require("../models/Etudiant"); 
-const HttpErreur = require("../models/HttpErreur");
+const HttpError = require("../models/HttpErreur");
 
 
 const getEtudiant = async (req, res, next) => {
@@ -43,7 +43,7 @@ const supprimer_etudiant = async (req, res, next) => {
 
 const supprimeretudiants = async (req, res, next) => {
   try {
-    await Student.deleteMany();
+    await Etudiant.deleteMany();
     res.status(200).send("Tous les étudiants ont été supprimés");
   } catch (err) {
     console.error("Erreur en supprimant les étudiants", err);
